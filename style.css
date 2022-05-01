@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  width: 1440px;
+  height: 900px;
+  /* height: 100vh; */
+
+  background-color: hsl(0, 0%, 100%);
+}
+
+#body-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-columns: repeat(2 1fr); */
+  /* grid-template-areas: "bimgL mob text bimgR"; */
+}
+
+.backImg {
+  grid-column: 1/2;
+
+  width: 550px;
+  height: 850px;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-bottom-right-radius: 250px;
+  border-bottom-left-radius: 250px;
+}
+
+.backImg,
+.chat {
+  grid-row: 1;
+}
+
+.chat {
+  /* grid-area: mob; */
+  grid-column: 1/2;
+  height: 750px;
+  width: 350px;
+  border: 12px rgb(221, 203, 203) solid;
+  border-radius: 40px;
+  /* width: 400px; */
+  background-color: hsl(270, 50%, 96%);
+  align-self: center;
+  margin-left: 450px;
+}
+
+.heading {
+  background-image: url(./images/avatar.jpg);
+
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  height: 90px;
+  border-radius: 26px;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.avatar img {
+}
+.heading img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.heading p,
+h2 {
+  color: white;
+  /* text-align: center; */
+  margin-left: 90px;
+}
+
+.heading h2 {
+  padding-top: 35px;
+  font-size: 20px;
+}
+.heading p {
+  margin-top: 2px;
+  font-size: 14px;
+}
+
+.white-border {
+  background-color: white;
+  width: 180px;
+  height: 28px;
+  /* margin-top: 0%; */
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  /* text-align: center; */
+  left: 75px;
+  bottom: 62px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.line1 {
+  border: 1px;
+  border-radius: 15px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+
+  margin-left: 10px;
+  width: 220px;
+  background-color: hsla(266, 9%, 84%, 0.418);
+  color: hsl(276, 55%, 52%);
+  margin-bottom: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.line2 {
+  border: 1px;
+  border-radius: 15px;
+  border-bottom-right-radius: 3px;
+  width: fit-content;
+  color: hsl(271, 15%, 43%);
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 10px;
+  background-color: white;
+}
+.line2-1 {
+  border: 1px;
+  border-radius: 15px;
+  border-bottom-right-radius: 3px;
+  width: fit-content;
+  color: hsl(271, 15%, 43%);
+  padding: 10px;
+  margin-left: 182px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* margin-right: -50px; */
+  background-color: white;
+}
+.line3 {
+  border: 1px;
+  border-radius: 15px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+  margin-left: 10px;
+  width: 220px;
+  background-color: hsla(266, 9%, 84%, 0.418);
+  color: hsl(276, 55%, 52%);
+  margin-bottom: 20px;
+}
+
+.radioRate {
+  border: 1px solid black;
+  width: 250px;
+  display: flex;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  justify-content: space-around;
+  color: white;
+  appearance: none;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  border-bottom-left-radius: 5px;
+}
+
+.figure {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.figure img {
+  width: 60px;
+  border-radius: 15px;
+}
+.text {
+  grid-column: 2/3;
+  align-self: center;
+  /* z-index: 2; */
+  width: 500px;
+  margin-left: 320px;
+}
+
+.text,
+.backImgRight {
+  grid-row: 1;
+}
+
+.text h1 {
+  font-size: 50px;
+}
+
+.text p {
+  font-size: 20px;
+}
+
+.backImgRight {
+  grid-column: 2/3;
+
+  width: 300px;
+  height: 700px;
+  background: linear-gradient(
+    hsla(293, 100%, 63%, 0.068),
+    hsla(264, 100%, 61%, 0.13)
+  );
+  border-top-left-radius: 20pc;
+  /* z-index: 1; */
+  margin-left: 720px;
+  margin-top: 210px;
+}
+
+.typemessage {
+  border: 1px solid black;
+  padding: 10px;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  color: gray;
+  margin-top: 20px;
+}
