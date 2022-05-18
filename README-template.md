@@ -46,7 +46,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Background images
-- Responsive Desktop/Mobile layout
+- Desktop layout
 
 ## Author
 
